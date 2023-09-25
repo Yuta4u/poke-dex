@@ -1,17 +1,12 @@
-import React from "react"
+import { QueryClient, QueryClientProvider } from "react-query"
+import PokemonCollection from "./components/pokemonCollection"
 
+const queryClient = new QueryClient()
 function App() {
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-200">
-      <div className="bg-white p-8 rounded shadow-lg">
-        <h1 className="text-2xl font-bold mb-4">
-          React App with Tailwind CSS and DaisyUI
-        </h1>
-        <button className="btn btn-xs sm:btn-sm bg-slate-700 text-white">
-          Responsive
-        </button>
-      </div>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <PokemonCollection />
+    </QueryClientProvider>
   )
 }
 
