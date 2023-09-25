@@ -19,7 +19,7 @@ function card({ data }) {
     >
       <Modal data={dataPokemon} />
       <div className="flex justify-center h-44 p-5 m-2 rounded-lg bg-slate-200">
-        <img src={pokeImage} />
+        <img alt="pokemon-img" src={pokeImage} />
       </div>
       <div className="card-body">
         <h2 className="card-title">

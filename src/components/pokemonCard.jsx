@@ -35,7 +35,7 @@ function PokemonCard({ data }) {
         />
         <a href="https://github.com/Yuta4u" className="w-14 h-6 ">
           <div className="w-6 h-6 rounded-full ml-5 flex justify-center hover:cursor-pointer">
-            <img src={GithubIcon} />
+            <img alt="img-github-icon" src={GithubIcon} />
           </div>
         </a>
       </div>
